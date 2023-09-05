@@ -10,7 +10,7 @@ st.title("Email/SMS Spam Classifier")
 ps = PorterStemmer()
 
 nltk.download('punkt')
-nltk.download('stopword')
+nltk.download('stopwords')
 
 
 def transform_text(text):
