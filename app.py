@@ -35,8 +35,8 @@ def transform_text(text):
     for i in text:
         y.append(ps.stem(i))      
     return ' '.join(y)
-model = pickle.load(open(r"datasets/smsmodel.txt","rb"))
-count = pickle.load(open(r"datasets/countvectorsms.txt","rb"))
+model = pickle.load(open("datasets/smsmodel.txt","rb"))
+count = pickle.load(open("datasets/countvectorsms.txt","rb"))
 input_sms = st.text_area("Enter the message")
 if st.button('Predict'):
     #preprocess
